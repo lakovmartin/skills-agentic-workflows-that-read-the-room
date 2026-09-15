@@ -13,8 +13,11 @@ safe-outputs:
 tools:
   edit:
   web-fetch:
+  bash:
+    - curl
 network:
   allowed:
+    - defaults
     - github.com
     - github.blog
     - awesome-copilot.github.com
