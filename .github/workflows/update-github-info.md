@@ -19,7 +19,8 @@ tools:
 network:
   allowed:
     - defaults
-    - github.com
+    - github
+    - copilot
     - github.blog
     - awesome-copilot.github.com
 ---
