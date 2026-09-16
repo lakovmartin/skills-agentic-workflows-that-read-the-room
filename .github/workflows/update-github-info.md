@@ -17,6 +17,7 @@ tools:
     - curl
     - wget
 network:
+  egress: allow
   allowed:
     - defaults
     - github.com
