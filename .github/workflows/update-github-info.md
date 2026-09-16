@@ -17,10 +17,10 @@ tools:
     - curl
     - wget
 network:
-  egress: allow
   allowed:
     - defaults
-    - github.com
+    - github
+    - copilot
     - github.blog
     - awesome-copilot.github.com
 ---
@@ -36,7 +36,8 @@ Use these sources:
 - Awesome Copilot workflows: https://awesome-copilot.github.com/workflows/
 
 Fetch https://awesome-copilot.github.com/workflows/ before drafting updates.
-If `web-fetch` is unavailable in the session, use `curl` or `wget` as a fallback.
+Use the `web_fetch` tool for HTTP retrieval when possible.
+If `web_fetch` fails in the session, use `curl` or `wget` as a fallback and continue.
 
 Update `site/content/github-info.md` with concise,
 practical updates for readers and include source context when content comes
