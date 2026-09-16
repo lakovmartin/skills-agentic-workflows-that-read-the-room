@@ -15,6 +15,7 @@ tools:
   web-fetch:
   bash:
     - curl
+    - wget
 network:
   allowed:
     - defaults
@@ -34,6 +35,7 @@ Use these sources:
 - Awesome Copilot workflows: https://awesome-copilot.github.com/workflows/
 
 Fetch https://awesome-copilot.github.com/workflows/ before drafting updates.
+If `web-fetch` is unavailable in the session, use `curl` or `wget` as a fallback.
 
 Update `site/content/github-info.md` with concise,
 practical updates for readers and include source context when content comes
